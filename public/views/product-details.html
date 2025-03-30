@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/product-details.css">
+</head>
+<body>
+  <div class="body-wrapper">
+    <header class="header">
+      <div class="logo">PCShop</div>
+      <nav class="nav" id="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/cart">Cart</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </header>
+    <main class="main-content">
+      <section class="product-details-section">
+        <h1 id="product-title">Loading...</h1>
+        <img id="product-image" src="https://via.placeholder.com/400x250" alt="Product Image" loading="lazy">
+        <p id="product-description">Short description goes here.</p>
+        <div class="specifications" id="specifications">
+        </div>
+        <p id="product-details">
+          Detailed information about the product will appear here.
+        </p>
+        <p id="product-price"></p>
+
+        <div class="button-container">
+          <form id="add-to-cart-form" action="/postCart" method="POST">
+            <input type="hidden" id="cart-product-id" name="productId" value="">
+            <input type="hidden" id="cart-product-title" name="productTitle" value="">
+            <input type="hidden" id="cart-product-price" name="price" value="">
+            <input type="hidden" id="cart-category" name="category" value="">
+            <button type="submit" class="btn add-to-cart">Add to Cart</button>
+            <a href="/" class="btn back-to-home">Back to Home</a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Contact us at: pcshop@example.com</p>
+      <p>&copy; 2025 PCShop. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="/js/product-details.js"></script>
+  <script src="/js/nav-toggle.js"></script>
+</body>
+</html>

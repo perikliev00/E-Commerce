@@ -1,0 +1,44 @@
+{
+  "name": "my-e-shop",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "compression": "^1.8.0",
+    "connect-mongo": "^5.1.0",
+    "connect-mongodb-session": "^5.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "localStorage": "^1.0.4",
+    "mongoose": "^8.10.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^3.1.9",
+    "sendgrid": "^5.2.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

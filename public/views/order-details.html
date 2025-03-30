@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - PC Shop</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/section.css" />
+    <link rel="stylesheet" href="/styles/order-details.css" />
+</head>
+<body>
+    <div class="body-wrapper">  
+
+        <header class="header">
+            <div class="logo">PCShop</div>
+            <nav class="nav" id="navbar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cart">Cart</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle">☰</button>
+        </header>
+
+        <main class="main-content">
+            <section class="order-details">
+                <h1>Order Details</h1>
+                <form id="orderForm" method="post" action="/order">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="address">Delivery Address</label>
+                    <input type="text" id="address" name="address" required />
+
+                    <label for="postcode">Post Code</label>
+                    <input type="text" id="postcode" name="postcode" required />
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes"></textarea>
+
+                    <button id='submitButton' type="submit">Submit Order</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <p>Contact us at: pcshop@example.com</p>
+            <p>&copy; 2025 PCShop. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/order-submit.js"></script>
+</body>
+</html>

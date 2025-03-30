@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - PCShop</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/section.css" />
+  <script defer src="/js/register.js"></script>
+</head>
+<body>
+  <div class="body-wrapper">  
+    <header class="header">
+      <div class="logo">PCShop</div>
+      <nav class="nav" id="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/cart">Cart</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+          <li><a href="/admin-panel">Admin</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </header>
+
+    <main class="main-content" style="padding: 20px;">
+      <h1>Register</h1>
+
+      <form action="/signup-api" method="POST" style="max-width: 400px;">
+        <div style="margin-bottom: 10px;">
+          <label for="email">Email:</label><br>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            style="width:100%; padding: 8px;"
+          >
+        </div>
+
+        <div style="margin-bottom: 10px;">
+          <label for="password">Password:</label><br>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            required 
+            style="width:100%; padding: 8px;"
+          >
+        </div>
+
+        <button type="submit" style="padding: 8px 16px;">
+          Sign Up
+        </button>
+      </form>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p>Contact us at: pcshop@example.com</p>
+      <p>&copy; 2025 PCShop. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="/js/nav-toggle.js"></script>
+</body>
+</html>

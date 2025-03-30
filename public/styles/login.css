@@ -1,0 +1,75 @@
+.login-section {
+    max-width: 400px;        
+    margin: 40px auto;       
+    padding: 20px;
+    background: #fff;        
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .login-section h1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #007bff;          
+    text-align: center;
+  }
+  
+  .login-section form {
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  .login-section label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-section input[type="email"],
+  .login-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-section button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .login-section button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+  @media only screen and (max-width: 768px) {
+    .login-section {
+      width: 90%;            
+      margin: 20px auto;
+      padding: 15px;
+    }
+    .login-section h1 {
+      font-size: 1.5rem;     
+    }
+    .login-section input[type="email"],
+    .login-section input[type="password"] {
+      font-size: 1rem;       
+    }
+    .login-section button[type="submit"] {
+      font-size: 1rem;       
+      padding: 10px;
+    }
+  }
+  
